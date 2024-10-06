@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{full_name}",
+ "creation": "2024-07-06 13:10:47.639806",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zeic",
+  "wallet_user",
+  "wallet_company",
+  "mobile_no",
+  "send_welcome_message",
+  "email",
+  "first_name",
+  "last_name",
+  "full_name",
+  "user",
+  "type",
+  "role"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zeic",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "wallet_user",
+   "fieldtype": "Link",
+   "label": "Wallet User ",
+   "options": "Wallet User",
+   "unique": 1
+  },
+  {
+   "fetch_from": "wallet_user.wallet_company",
+   "fieldname": "wallet_company",
+   "fieldtype": "Data",
+   "label": "Wallet Company"
+  },
+  {
+   "fetch_from": "wallet_user.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No"
+  },
+  {
+   "fetch_from": "wallet_user.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fetch_from": "wallet_user.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fetch_from": "wallet_user.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fetch_from": "wallet_user.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name"
+  },
+  {
+   "fetch_from": "wallet_user.user",
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User"
+  },
+  {
+   "fetch_from": "wallet_user.type",
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fetch_from": "wallet_user.role",
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Role"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_welcome_message",
+   "fieldtype": "Check",
+   "label": "Send Welcome Message"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-21 10:43:33.965680",
+ "modified_by": "Administrator",
+ "module": "Business Bot",
+ "name": "Bot Wallet User",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

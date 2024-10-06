@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{voucher_no}-{###}",
+ "creation": "2024-07-06 19:51:28.866452",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nvft",
+  "bot_wallet_user",
+  "otp",
+  "is_used",
+  "used_at",
+  "expired_at",
+  "voucher_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nvft",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bot_wallet_user",
+   "fieldtype": "Link",
+   "label": "Bot Wallet User",
+   "options": "Wallet User"
+  },
+  {
+   "fieldname": "otp",
+   "fieldtype": "Data",
+   "label": "Otp",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_used",
+   "fieldtype": "Check",
+   "label": "Is Used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "used_at",
+   "fieldtype": "Date",
+   "label": "Used At ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expired_at",
+   "fieldtype": "Datetime",
+   "label": "Expired At ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "voucher_no",
+   "fieldtype": "Link",
+   "label": "Voucher No",
+   "options": "Wallet Payment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-09 10:12:55.670472",
+ "modified_by": "Administrator",
+ "module": "Business Bot",
+ "name": "Bot Otp Code",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Wallet Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Wallet Main User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
