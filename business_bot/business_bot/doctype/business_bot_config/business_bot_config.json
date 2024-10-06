@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-25 10:52:45.467923",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_y7ov",
+  "config_section",
+  "channel",
+  "token",
+  "column_break_dsiqk",
+  "url",
+  "session"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_y7ov",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "config_section",
+   "fieldtype": "Column Break",
+   "label": "Business Bot Setting "
+  },
+  {
+   "fieldname": "channel",
+   "fieldtype": "Select",
+   "label": "Channel",
+   "options": "Whatsapp\nEmail\nSMS"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "Token"
+  },
+  {
+   "fieldname": "column_break_dsiqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "Url"
+  },
+  {
+   "fieldname": "session",
+   "fieldtype": "Data",
+   "label": "Session"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-09 10:10:45.824044",
+ "modified_by": "Administrator",
+ "module": "Business Bot",
+ "name": "Business Bot Config",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
